@@ -1,0 +1,100 @@
+// prog.by vikash parashar of while loop calculator
+//Date:16/12/2020 
+#include<stdio.h>
+       int main()
+       {
+       int X,Y,A,S,M,choice,count;
+       float D;
+printf("\nThis Program is written by :\nMr.Vikash Parashar\n");
+printf("modification 12");
+printf("\nDate:16/12/2020 02:16pm\n\t");
+       count=1;
+       while(count<=100)
+       {
+           printf("\nThis program perform multipal choice operation , please choose carefully from below list:\n");
+           printf("\nPlease note that:\nA=Addition\nS=Subtraction\nM=Multiplication\nD=Division\n");
+printf("\nEnter your choice:\n");
+printf("1.A\n2.S\n3.AS\n4.M\n5.AM\n6.MS\n7.ASM\n8.D\n9.DA\n10.DS\n11.DSA\n12.DM\n13.DMA\n14.DMS\n15.ASMD\n");
+      scanf("%d",&choice);
+      if(choice>15)
+      {
+      printf("\n\nProgram has been stoped due to wrong choice input by you.\nRun this program again if you want to perfrom a task given in the choice section\t\t\t\t\t\t\t\t\tAnd\nPlease select in range(1 to 15).\nOtherwise Program will be Termanited again\n\n\t\t\t\t!!! Attention !!!\nThis Program Is Coded By Mr.Vikash Parashar Sir");
+      break ;
+      }
+      else
+          {
+              printf("enter value of X and Y:\n");
+           scanf("%d%d",&X,&Y);
+           A=X+Y;
+           S=X-Y;
+           M=X*Y;
+           D=X/Y;
+           switch(choice)
+           {
+           case 1:
+           printf("Addition =%d\n:",A);
+           break;
+           
+           case 2:
+           printf("Subtraction = %d\n",S);
+           break;
+           
+           case 3:
+           printf("Addition = %d\n Subtraction = %d\n",A,S);
+           break;
+           
+           case 4:
+           printf("Multiplication = %d\n",M);
+           break;
+           
+           case 5:
+           printf("Addition = %d\n Multiplication = %d\n",A,M);
+           break;
+           
+           case 6:
+           printf("Multiplication = %d\n Subtraction = %d\n",M,S);
+           break;
+           
+           case 7:
+           printf("Addition = %d\nSubtraction = %d\nMultiplication = %d\n",A,S,M);
+           break;
+           
+           case 8:
+           printf("Division = %.2f\n",D);
+           break;
+           
+           case 9:
+           printf("Division = %.2f\n Addition = %d\n",D,A);
+           break;
+           
+           case 10:
+           printf("Division = %.2f\nSubtraction = %d\n",D,S);
+           break;
+           
+           case 11:
+           printf("Division = %.2f\nSubtraction = %d\nAddition = %d\n",D,S,A);
+           break;
+           
+           case 12:
+           printf("Division = %.2f\nMltiplication = %d\n",D,M);
+           break;
+           
+           case 13:
+           printf("Division = %.2f\nMultiplication = %d\nAddition = %d\n",D,M,A);
+           break;
+           
+           case 14:
+           printf("Division = %.2f\nMultiplication = %d\n Subtraction = %d\n",D,M,S);
+           break;
+           
+           case 15:
+           printf("Addition = %d\nSubtraction = %d\nMultiplication = %d\nDivision = %.2f\n",A,S,M,D);
+           break;
+          }
+          }
+           count=count+1;
+       }
+       }
+       
+       
+       
